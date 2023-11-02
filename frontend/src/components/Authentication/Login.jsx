@@ -36,9 +36,8 @@ function Login() {
                 },
             };
 
-            const {data} = await axios.post("/api/user/login",{email,password},config).catch(err=>{
-                console.log(err);
-            })
+            const {data} = await axios.post("/api/user/login",{email,password},config)
+            
 
             toast({
                 title: 'Login Successful',

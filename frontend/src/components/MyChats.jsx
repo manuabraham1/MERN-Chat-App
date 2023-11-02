@@ -13,7 +13,6 @@ function MyChats({fetchAgain}) {
   const { user, selectedChat, setSelectedChat, chats, setChats } = ChatState();
 
   const toast = useToast()
-  console.log(selectedChat);
 
   const fetchChats = async () => {
     try {
